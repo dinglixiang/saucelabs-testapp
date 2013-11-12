@@ -1,12 +1,17 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require 'pry'
 
 if defined?(Bundler)
   #Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
 
   Bundler.require(:default, :assets, Rails.env)
+
+  if ENV["SAUCE"] == "true"
+    Bundler.require(:sauce)
+  end
 end
 
 

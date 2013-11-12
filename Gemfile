@@ -6,6 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'pry'
 
 
 # Gems used only for assets and not required
@@ -22,7 +23,7 @@ end
 
 gem 'jquery-rails'
 
-group :test, :development do
+group :test, :development, :sauce do
   # These are the target gems of this tutorial
   gem 'rspec-rails', '~> 2.12'
   gem 'capybara', '~> 2.0.3'
