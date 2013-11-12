@@ -1,7 +1,6 @@
 require "spec_helper"
 
-#describe "Findaport.com" #, :sauce => true do
-describe "Frontpage" do
+describe "Findaport.com" , :sauce => true do
   it "should have text 'world port information online'" do
     visit "/"
     #fill_in 'search', :with => "Ramen"
