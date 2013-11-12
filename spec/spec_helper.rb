@@ -4,6 +4,8 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
 
+require 'pry'
+
 require 'capybara/rails'
 require 'capybara/rspec'
 
@@ -11,6 +13,7 @@ if ENV["SAUCE"] == "true"
   Capybara.default_driver = :sauce
   require "sauce_helper"
 end
+
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
