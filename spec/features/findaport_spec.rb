@@ -39,6 +39,9 @@ describe "dev.findaport.com" , sauce: true, js: true do
 
     def visit_homepage
       visit "http://dev.findaport.com"
-      click_link "Start using Findaport.com"
+
+      if close_link = find("#MB_close")
+        close_link.click
+      end
     end
 end
