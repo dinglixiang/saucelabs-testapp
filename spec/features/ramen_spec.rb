@@ -2,6 +2,7 @@ require "spec_helper"
 
 describe "Findaport.com" , :sauce => false do
   it "should have text 'world port information online'" do
+    pending
     visit "/"
     #fill_in 'search', :with => "Ramen"
     #click_button "searchButton"

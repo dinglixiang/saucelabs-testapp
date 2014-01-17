@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe "dev.findaport.com" , sauce: true, js: true do
+describe "dev.findaport.com", js: true do
   let(:username) { "xin+sauce@zenpow.com" }
   let(:password) { "tthis8" }
 
