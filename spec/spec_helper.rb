@@ -9,10 +9,8 @@ require 'pry'
 require 'capybara/rails'
 require 'capybara/rspec'
 
-if ENV["SAUCE"] == "true"
-  Capybara.default_driver = :sauce
-  require "sauce_helper"
-end
+require "sauce_helper"
+Capybara.default_driver = :sauce
 
 
 # Requires supporting ruby files with custom matchers and macros, etc,

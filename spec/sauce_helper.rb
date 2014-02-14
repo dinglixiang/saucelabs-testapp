@@ -12,4 +12,5 @@ Sauce.config do |config|
     ["Linux", "Firefox", "20"],
     ["OS X 10.8", "Safari", "6"]
   ]
+  config[:start_local_application] = false
 end
