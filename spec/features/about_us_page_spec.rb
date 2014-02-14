@@ -6,9 +6,11 @@ describe "About Page", sauce: true do
   #end
 
   it "have a right title" do
+    p "-----Begin-----"
     visit 'http://dev.findaport.com/about'
-    p @selenium.inspect.to_s
+    p selenium.inspect.to_s
     expect(page).to have_content('Having launched in February 2010')
-    p @selenium.session_id.to_s
+    p selenium.session_id.to_s
+    p "-----End-----"
   end 
 end
