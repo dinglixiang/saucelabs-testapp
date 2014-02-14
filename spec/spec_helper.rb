@@ -9,7 +9,7 @@ require 'pry'
 require 'capybara/rails'
 require 'capybara/rspec'
 
-require "sauce_helper"
+require_relative "sauce_helper"
 Capybara.default_driver = :sauce
 
 
