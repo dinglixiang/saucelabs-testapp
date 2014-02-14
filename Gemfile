@@ -22,6 +22,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'ci_reporter'
 
 group :test, :development, :sauce do
   # These are the target gems of this tutorial
